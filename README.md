@@ -2,7 +2,6 @@
 
 ## Project info
 
-**URL**: https://velocity.dev/projects/e257d00f-e0eb-483c-8119-f5b0ca2ab4bf
 
 ## How can I edit this code?
 
