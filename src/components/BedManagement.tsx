@@ -13,7 +13,7 @@ import {
   DialogTitle 
 } from "@/components/ui/dialog";
 import { BedDouble, User, XCircle, CheckCircle2 } from "lucide-react";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 
 export interface Bed {

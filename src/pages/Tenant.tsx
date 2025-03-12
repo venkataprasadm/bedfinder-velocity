@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "@/hooks/use-toast";
 import { HostelCard, HostelData } from "@/components/HostelCard";
 import { NavBar } from "@/components/NavBar";
 import { SearchBar, SearchFilters } from "@/components/SearchBar";
