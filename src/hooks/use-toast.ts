@@ -1,3 +1,4 @@
+
 import * as React from "react"
 
 import type {
@@ -6,7 +7,7 @@ import type {
 } from "@/components/ui/toast"
 
 const TOAST_LIMIT = 1
-const TOAST_REMOVE_DELAY = 1000000
+const TOAST_REMOVE_DELAY = 5000
 
 type ToasterToast = ToastProps & {
   id: string
@@ -166,6 +167,33 @@ function toast({ ...props }: Toast) {
     dismiss,
     update,
   }
+}
+
+// Add convenience methods to the toast function
+toast.success = (message: string) => {
+  return toast({
+    title: "Success",
+    description: message,
+    variant: "default",
+    className: "bg-green-50 border-green-200 text-green-800",
+  })
+}
+
+toast.error = (message: string) => {
+  return toast({
+    title: "Error",
+    description: message,
+    variant: "destructive",
+  })
+}
+
+toast.info = (message: string) => {
+  return toast({
+    title: "Info",
+    description: message,
+    variant: "default",
+    className: "bg-blue-50 border-blue-200 text-blue-800",
+  })
 }
 
 function useToast() {
